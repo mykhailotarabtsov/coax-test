@@ -1,0 +1,55 @@
+.header {
+	// width: 80%;
+	background-color: #303539;
+	align-self: flex-start;
+	display: flex;
+
+	&__search {
+		// width: 68.29%;
+		position: relative;
+		width: 88%;
+		padding: 15.5px 20px;
+
+		input[type="text"] {
+			width: 100%;
+			padding: 8.5px 40px 8.5px 21px;
+			background-color: #34393D;
+			border-radius: 40px;
+			border: none;
+			outline: none;
+			color: #797979;
+			font-size: 0.875em;
+			cursor: pointer;
+		}
+
+		&-img {
+			height: 15px;	
+			width: 15px;
+			background: url('../img/ic_search.png') no-repeat 50% 50%;
+			background-size: cover;
+			position: absolute;
+			top: 50%;
+			right: 34px;
+			transform: translateY(-50%);
+			cursor: pointer;
+		}
+	}
+
+	&__user {
+		width: 12%;
+		display: flex;
+		align-items: center;
+		padding: 0 10px 0 24px;
+		background-color: #22282B;
+
+		&-avatar {
+			height: 46px;
+			width: 46px;
+			margin-left: auto;
+			border: 2px solid #FFFFFF;
+			border-radius: 50%;
+			background: url('../img/avatar1.png') no-repeat 50% 50%;
+			background-size: cover;
+		}
+	}
+}

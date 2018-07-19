@@ -1,0 +1,73 @@
+.sidebar {
+	width: 20%;
+
+	&__logo {
+		background-color: #22282B;
+		text-align: center;
+		padding: 10px 0;
+		font-size: 0;
+	}
+
+	&__nav {
+		background-color: #282D30;
+		&>ul {
+			&>li {
+				&+.insert__li {
+					display: none;
+				}
+			}
+		}
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			color: #D4D4D4;
+			font-size: 0.9375em;
+			
+
+			li {
+				padding: 12px 18px 12px 31px;
+				border-left: 4px solid transparent;
+				display: flex;
+				align-items: center;
+				justify-content: auto;
+				cursor: pointer;
+
+				
+
+				&.active {
+					background-color: #3D4248;
+					border-left: 4px solid #3173A1;
+
+					img {
+						transform: rotate(-180deg);
+					}
+					&~li {
+						background-color: #3D4248;
+					}
+				}
+
+				svg {
+					margin-right: 13px;
+				}
+
+				img {
+					margin-left: auto;
+					display: block;
+					transition: all 0.5s ease;
+				}
+
+				ul {
+					width: 100%;
+					margin-top: 12px;
+				}
+			}
+		}
+
+		.insert__li {
+			li {
+				flex-wrap: wrap;
+			}
+		}
+	}
+}
